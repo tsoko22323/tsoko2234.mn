@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        @media (max-width: 700px) {
+            .flex {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 400px) {
+            .box {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
