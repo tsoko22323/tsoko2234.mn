@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 30px;
+        }
+        .box {
+            background-color: green;
+        }
+        @media (max-width: 600px) {
+            .grid {
+                gap: 10px;
+            }
+        }
+        @media (max-width: 400px) {
+            .grid {
+                grid-template-columns: 100px;
+                grid-template-rows: repeat(9, 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
