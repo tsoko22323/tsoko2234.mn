@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+    .dur {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto ;
+        gap: 20px;
+    }
+     @media only screen and ( max-width: 900px) {
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+        }
+    }
+    @media only screen and ( max-width: 600px) {
+        .container{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+   
+    @media only screen and ( max-width: 480px) {
+        .container{
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+   
+</style>
+<body>
+    <div class="container">
+        <div class="dur"></div>
+         <div class="dur"></div>
+          <div class="dur"></div>
+           <div class="dur"></div>
+            <div class="dur"></div>
+             <div class="dur"></div>
+    </div>
+</body>
+</html>
